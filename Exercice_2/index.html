@@ -8,14 +8,24 @@
 
 <body>
   <form>
-    <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname" onblur="myFunction()" />
+    <label for="lastname">Votre nom : </label><input type="text" name="lastname" id="lastname"  />
+    <!-- onblur="myFunction()" -->
   </form>
 
   
   <script>
-  function myFunction() {
-    alert("Merci de votre participation.");
-  }
+    document.getElementById("lastname");
+
+    lastname.onblur = (event) =>{
+
+      alert("Merci de votre participation.")
+    };
+
+
+
+  // function myFunction() {
+  //   alert("Merci de votre participation.");
+  // }
   </script>
 </body>
 </html>

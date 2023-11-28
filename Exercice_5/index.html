@@ -1,16 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/image1.jpg" id="image1" />
+    <img src="images/image2.jpg" id="image2" />
+    <img src="images/image3.jpg" id="image3" />
+    <img src="images/image4.jpg" id="image4" />
+    <img src="images/image5.jpg" id="image5" />
+  </div>
+  <script>
+
+    let a = document.querySelector("img")
+    console.log(a);
+    
+    function change() {
+
+      a.onmouseover = (event) => {
+
+        a.src = "images/image5.jpg";
+      }
+    }
+    change()
+  
+  </script>
+</body>
+
+</html> -->
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercice 5</title>
-  </head>
-  <body>
-    <div class="container">
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/image1.jpg" id="image1" />
+    <img src="images/image2.jpg" id="image2" />
+    <img src="images/image3.jpg" id="image3" />
+    <img src="images/image4.jpg" id="image4" />
+    <img src="images/image5.jpg" id="image5" />
+  </div>
+  <!-- exe 5 et 6 -->
+  <script>
+    
+
+ const imageOne = document.querySelector('#image1');
+  const imageTwo = document.querySelector('#image2');
+  const imageThree = document.querySelector('#image3');
+  const imageFour = document.querySelector('#image4');
+  const imageFive = document.querySelector('#image5');
+
+
+  function changeImg(image, newSrc, oldSrc) {
+    image.addEventListener('mouseover', () => {
+      image.src = newSrc;
+    });
+
+    image.addEventListener('mouseout', () => {
+      image.src = oldSrc
+    });
+  }
+
+  changeImg(imageOne, 'images/image1_2.jpg', 'images/image1.jpg');
+  changeImg(imageTwo, 'images/image2_2.jpg', 'images/image2.jpg');
+  changeImg(imageThree, 'images/image3_2.jpg', 'images/image3.jpg');
+  changeImg(imageFour, 'images/image4_2.jpg', 'images/image4.jpg');
+  changeImg(imageFive, 'images/image5_2.jpg', 'images/image5.jpg');
+
+  </script>
+</body>
+
 </html>

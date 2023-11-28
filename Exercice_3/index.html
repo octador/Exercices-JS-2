@@ -13,14 +13,22 @@
 
   <script>
 
+    // const elem = document.getElementById("lastname");
+
+    // function myLabel() {
+    //   elem.addEventListener("keyup", (event) => {
+    //     alert(event.key)
+    //   });
+    // }
+
     const elem = document.getElementById("lastname");
 
     function myLabel() {
-      elem.addEventListener("keyup", (event) => {
-        alert(event.key)
-      });
+      elem.onkeyup = (event) =>{
+        alert(event.key);
+      };
+      
     }
-
 
   </script>
 </body>
